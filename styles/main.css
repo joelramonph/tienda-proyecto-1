@@ -1,0 +1,397 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px*/
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Globales */
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+
+}
+
+h1 {
+  font-size: 5rem;
+
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* utilidades */
+.text-center{
+  text-align: center;
+}
+
+.btn{
+
+  display: block;
+  background-color: #22177A;
+  padding: 1rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color .3s ease-out;
+  border: none;
+}
+
+.btn:hover{
+  background-color: #4335A7;
+  cursor: pointers;
+ 
+}
+
+/*Header-Nav  */
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+ 
+}
+
+.title-site {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  
+}
+
+.title-site span {
+  color: #4379F2;
+}
+
+.hero {
+  background-image: url(../img/electonicBanner.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 55rem;
+}
+
+.container-nav {
+  border-top: 1px solid black;
+
+}
+
+.nav-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+/* Categoria Productos */
+
+.categorias {
+
+  margin-top: 5rem;
+}
+
+.categorias h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.categoria a {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.categoria a:hover {
+  background-color: #4379F2;
+  border-bottom-right-radius: 1rem;
+  color: #fff;
+}
+
+.listado-categoria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* Bloque About */
+
+.about-container {
+  margin-top: 10rem;
+  background-image: linear-gradient(to right, transparent 50%, #4379F2 50%, #4379F2 100%),
+   url(../img/nosotros2.jpg.png);
+   background-size: 100%, 120rem;
+   background-position: left center;
+   background-repeat: no-repeat;
+   padding: 100px 0;
+}
+
+.about-flex{
+  
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-text{
+  
+ flex-basis: 50%;
+ padding-left: 5rem;
+ color: #fff;
+ 
+}
+
+/* Card de productos */
+
+.contenido-principal{
+  padding-top: 50px;
+}
+.listado-productos{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /* column-gap: 20px;
+  row-gap: 20px; */
+  gap: 20px;
+}
+
+.producto:nth-child(1){
+  grid-column: 1 / 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img{
+ height: 350px;
+ width: 100%;
+ object-fit: cover;
+}
+
+.producto:nth-child(2){
+  grid-column: 1 / 4;
+}
+
+.producto:nth-child(2) img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto:nth-child(3){
+  grid-column: 4 / 7;
+}
+
+.producto:nth-child(3) img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.producto:nth-child(4){
+  grid-column: 1 / 3;
+}
+
+.producto:nth-child(5){
+  grid-column: 3 / 5;
+}
+
+.producto:nth-child(6){
+  grid-column: 5 / 7;
+}
+.producto{
+  background-color: #4379F2;
+}
+
+.info-producto{
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.info-producto a{
+  color: white;
+}
+
+.info-producto .precio-producto{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.info-producto h3{
+  margin: 0;
+}
+
+.info-producto p{
+ margin: 0 0 5px;
+}
+
+
+
+/* .producto img{
+  transition: transform .3s ease-out;
+}
+
+.producto img:hover{
+  transform: scale(.8);
+} */
+
+/* footer */
+
+.site-footer{
+  border-top: 1px solid black;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.site-footer h3{
+  margin-bottom: 5px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer-menu a{
+  display: block;
+}
+
+.copyright{
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Nosotros */
+.contenido-nosotros{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 40px;
+
+}
+
+.texto-nosotros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* formulario */
+
+/* .form{
+  max-width: 60rem;
+  margin: 0 auto;
+  
+}
+
+
+
+.form fieldset{
+  border: 1px solid black;
+  margin-bottom: 2rem;
+} */
+
+/* .form legend{
+  background-color: #4379F2;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+} */
+
+/* .campo{
+  display: flex;
+  margin-bottom:  2rem;
+} */
+
+/* .campo label{
+  flex-basis: 10rem;
+  
+} */
+
+ /* .campo input[type="text"],
+ input[type="email"],
+ input[type="tel"], */
+ /* .campo input:not([type="radio"]),
+ .campo textarea,
+ .campo select
+ {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding:  1rem;
+} */
+
+
+form{
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+
+form fieldset{
+  border: 1px solid black;
+  margin-bottom: 2rem;
+}
+
+form legend{  
+  background-color: #4379F2;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+
+}
+
+.campo{
+  display: flex;
+  margin-bottom:  2rem;
+} 
+
+.campo label{
+  flex-basis: 10rem;
+  
+
+}
+
+
+/* .campo input[type="text"],
+ input[type="email"],
+ input[type="tel"],  */
+
+ .campo input:not([type="radio"]),
+ .campo textarea,
+ .campo select
+ {
+  flex: 1;
+  border: 1px solid #e1e1e1;
+  padding:  1rem;
+} 
+
